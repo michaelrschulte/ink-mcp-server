@@ -12,3 +12,9 @@ primary_region = 'iad'
   cpu_kind = 'shared'
   cpus = 1
   memory_mb = 512
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
