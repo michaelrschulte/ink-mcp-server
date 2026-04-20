@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 INK_API_URL = os.environ.get("INK_API_URL", "https://pdf-annotator-ink.fly.dev").rstrip("/")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 
-mcp = FastMCP("ink-mcp-server", host="0.0.0.0")
+mcp = FastMCP("ink-mcp-server", host="0.0.0.0", stateless_http=True)
 
 
 def _check_health() -> None:
