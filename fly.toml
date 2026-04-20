@@ -1,9 +1,14 @@
-app = "ink-mcp-server"
-primary_region = "iad"
+# fly.toml app configuration file generated for ink-mcp-server on 2026-04-19T21:52:34-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'ink-mcp-server'
+primary_region = 'iad'
 
 [build]
 
 [[vm]]
-  cpu_kind = "shared"
+  cpu_kind = 'shared'
   cpus = 1
   memory_mb = 512
