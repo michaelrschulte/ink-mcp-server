@@ -74,4 +74,4 @@ def annotate_pdf(
 
 if __name__ == "__main__":
     _check_health()
-    mcp.run(transport="streamable-http")
+    mcp.run(transport="streamable-http", host="0.0.0.0", port=8000)
